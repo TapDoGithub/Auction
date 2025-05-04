@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Display</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="display-container">
+        <div class="display-header text-center mb-4">
+            <h1>CHARITY AUCTION</h1>
+            <h3 id="display-item" class="text-muted">Current Item: <span>Not Set</span></h3>
+        </div>
+        
+        <div class="display-metrics">
+            <div class="metric-card">
+                <div class="metric-label">CURRENT BID</div>
+                <div id="display-current-price" class="metric-value">0</div>
+            </div>
+            
+            <div class="metric-row">
+                <div class="metric-card">
+                    <div class="metric-label">FLOOR PRICE</div>
+                    <div id="display-floor-price" class="metric-value">0</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">MINIMUM RAISE</div>
+                    <div id="display-min-raise" class="metric-value">0</div>
+                </div>
+            </div>
+            
+            <div class="metric-card total-card">
+                <div class="metric-label">TOTAL RAISED</div>
+                <div id="display-total-raised" class="metric-value">0</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/display.js"></script>
+</body>
+</html>
