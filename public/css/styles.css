@@ -52,10 +52,10 @@ body {
 
 .display-metrics {
     display: grid;
-    grid-template: repeat(2, 1fr)/3fr 1fr;
+    grid-template: 3fr 2fr/4fr 1fr;
     grid-auto-flow: row;
     gap: 20px;
-    align-items: center;
+    align-items: end;
 }
 
 .display-header h1 {
@@ -82,25 +82,39 @@ body {
     flex: 1;
 }
 
-.total-card {
+.progress-bar {
     background-color: #dc3545;
-    color: white;
-    height: 80%;
+    width: 80%;
+    height: 0;
     grid-row: 1/3;
     grid-column: 2/3;
+    margin-bottom: 20px;
+    padding: 20px;
+    align-self: self-end;
+    transition: ease 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.progress-label {
+    color: white;
+}
 .metric-label {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
-
+.metric-biglabel{
+    font-size: 2rem;
+}
 .metric-value {
     font-size: 2.5rem;
     font-weight: bold;
 }
-
+.metric-bigvalue{
+    font-size: 4rem;
+}
 .total-card .metric-value {
     font-size: 3rem;
 }
