@@ -1,1 +1,1 @@
-display - controller node with websocket
+display - controller module with websocket and http for auction display
